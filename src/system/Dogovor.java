@@ -20,6 +20,8 @@ public class Dogovor {
         this.subject = subject;
         this.status = status;
     }
+    Dogovor dogovor = new Dogovor(4324d,new People("123", "243325","fdsafd"),
+            "23.12.2019","sfdfdsf","Принято в работу");
 
     public Dogovor(double cost, People otvetstvenniyChelovek, String subject) {
         this(cost, otvetstvenniyChelovek, LocalDateTime.now().toString(), subject, "Принято в работу");

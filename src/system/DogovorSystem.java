@@ -17,7 +17,7 @@ public class DogovorSystem {
             switch (command) {
                 case "Создать договор":
                     if (i > 49) {
-                        System.out.println("Места для людей больше нет");
+                        System.out.println("Места для договоров больше нет");
                         continue;
                     } else {
                         System.out.println("Введите стоимость");

@@ -1,8 +1,8 @@
 import java.sql.SQLOutput;
 
 public class Test {
+    static String a = "fdf";
     public static void main(String[] args) {
-
 //        String s1 = new String("Hello");
 //        String s2 = new String("Hello");
 //        System.out.println(s1 == "Hello");
@@ -16,17 +16,45 @@ public class Test {
 //        System.out.println(s3 == "Hello");
 //        System.out.println(s3 == s4);
 //        System.out.println(s5 == s4);
-        int x = 2, y = 5;
-        char a = 'a', b = 'b';
-        System.out.println(x + y);
-        System.out.println(x + y + "");
-        System.out.println("" + x + y);
-        System.out.println(x - y + "");
-        System.out.println(a + b);
-        System.out.println(a + b + "");
-        System.out.println("" + a + b);
-        System.out.println(a + y);
-        System.out.println("" + a + y);
+//        int x = 2, y = 5;
+//        char a = 'a', b = 'b';
+//        System.out.println(x + y);
+//        System.out.println(x + y + "");
+//        System.out.println("" + x + y);
+//        System.out.println(x - y + "");
+//        System.out.println(a + b);
+//        System.out.println(a + b + "");
+//        System.out.println("" + a + b);
+//        System.out.println(a + y);
+//        System.out.println("" + a + y);
+        calculate(2,4,"+");
+        String[] strings = new String[10];
+        strings[0] = "+";
+        for(int i = 1; i < strings.length; i++){
+            strings[i] = "" + i;
+        }
+        calculate(strings);
     }
-
+    public static void calculate(int firstNumber, int lastNumber, String operation){
+        switch (operation){
+            case "+":
+                System.out.println(firstNumber + lastNumber);
+                break;
+            default:
+                System.out.println("No operation found");
+        }
+    }
+    public static void calculate(String[] args){
+        switch (args[0]){
+            case "+":
+                int sum = 0;
+                for(int i = 1;i < args.length;i++){
+                    sum += Integer.parseInt(args[i]);
+                }
+                System.out.println(sum);
+                break;
+            default:
+                System.out.println("No operation found");
+        }
+    }
 }
