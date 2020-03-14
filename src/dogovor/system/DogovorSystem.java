@@ -1,4 +1,4 @@
-package system;
+package dogovor.system;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -24,7 +24,7 @@ public class DogovorSystem {
                         double cost = scanner.nextDouble();
                         //ЗДЕСЬ НЕ СЛУЧАЙНО ПРОСТО ТАК ЕЩЁ РАЗ ЭТО СТРОКА, ОБЪЯСНЮ НА СЛЕДУЮЩЕМ ЗАНЯТИИ
                         scanner.nextLine();
-                        System.out.println("Введите номер человек до " + (j - 1));
+                        System.out.println("Введите номер человека до " + (j - 1));
                         int number = scanner.nextInt();
                         if(number > j-1){
                             System.out.println("Invalid number");
@@ -35,6 +35,7 @@ public class DogovorSystem {
                         System.out.println("Введите предмет договора");
                         String subject = scanner.nextLine();
                         Dogovor dogovor = new Dogovor(cost, peoples[number], subject);
+                        System.out.println(dogovor.getId());
                         dogovors[i] = dogovor;
                         i++;
                     }

@@ -1,7 +1,6 @@
 import java.sql.SQLOutput;
 
 public class Test {
-    static String a = "fdf";
     public static void main(String[] args) {
 //        String s1 = new String("Hello");
 //        String s2 = new String("Hello");
@@ -44,17 +43,32 @@ public class Test {
                 System.out.println("No operation found");
         }
     }
+    public static void calculate(){
+        String[] strings = new String[50];
+        for(int i = 0; i < 50; i++){
+            strings[i] = "" + i;
+        }
+        System.out.println(getResultSum(strings));
+        System.out.println(STRING_TO_CHECK);
+    }
+
     public static void calculate(String[] args){
         switch (args[0]){
             case "+":
-                int sum = 0;
-                for(int i = 1;i < args.length;i++){
-                    sum += Integer.parseInt(args[i]);
-                }
+                int sum = getResultSum(args);
                 System.out.println(sum);
                 break;
             default:
                 System.out.println("No operation found");
         }
+    }
+    static String STRING_TO_CHECK = "fdf";
+
+    public static int getResultSum(String[] args) {
+        int sum = 0;
+        for(int i = 1;i < args.length;i++){
+            sum += Integer.parseInt(args[i]);
+        }
+        return sum;
     }
 }
