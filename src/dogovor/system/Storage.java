@@ -2,26 +2,20 @@ package dogovor.system;
 
 public class Storage {
     private static final int CAPACITY = 1000;
-    private StorageEntry[] storageEntries;
+    private Dogovor[] dogovors;
     private static int counter = 0;
 
     public Storage() {
-        this.storageEntries = new StorageEntry[CAPACITY];
+        this.dogovors =new Dogovor[CAPACITY];
     }
 
-    public void save(StorageEntry entry) {
-        if (counter < 1000) {
-            storageEntries[counter] = entry;
-            counter++;
-        } else {
-            System.out.println("Место закончилось");
-        }
+    public void add(Dogovor dogovor){
+        dogovors[counter] = dogovor;
+        counter++;
     }
-
-    public StorageEntry get(int i) {
-        if ((0 <= i) && (i < 1000)) {
-            return storageEntries[i];
+    public void printAllInfo(){
+        for(Dogovor dogovor: dogovors){
+            dogovor.getInfo();
         }
-        return null;
     }
 }
