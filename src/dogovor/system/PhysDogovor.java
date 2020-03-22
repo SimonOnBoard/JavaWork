@@ -5,6 +5,7 @@ public class PhysDogovor extends Dogovor {
     public PhysDogovor(double cost, String subject, Client client) {
         super(cost, subject);
         this.client = client;
+        //client = new Client()
     }
 
     @Override

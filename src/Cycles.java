@@ -34,7 +34,6 @@ public class Cycles {
             System.out.println(a);
             a++;
         }
-
     }
 
 }

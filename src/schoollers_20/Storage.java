@@ -20,7 +20,7 @@ public class Storage {
         }
     }
     public Dogovor getDogovor(int position){
-        if(position > 0 && position < counter){
+        if(position >= 0 && position < counter){
             return dogovors[position].getDogovor();
         }
         else {
