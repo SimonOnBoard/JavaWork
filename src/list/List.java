@@ -68,7 +68,15 @@ public class List<T> {
             return false;
         }
     }
-
+    public static void printAll(List<?> list){
+        int position = 0;
+        Elem elem = list.getHead();
+        while (elem != null){
+            System.out.println(elem +  " Position " + position);
+            position++;
+            elem = elem.getNext();
+        }
+    }
 //    public boolean delete(int number){
 //
 //    }

@@ -1,6 +1,4 @@
-package schoollers_20;
-
-import game_schoollers_27.StorageEntry;
+package game_schoollers_27;
 
 public class Storage {
     private static final int CAPACITY = 1000;
