@@ -1,5 +1,6 @@
 package exceptions_22;
 
+
 public class Factorial {
     public int fact(int n) throws Exception {
         if(n < 0){

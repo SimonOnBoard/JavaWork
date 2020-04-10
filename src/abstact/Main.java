@@ -1,4 +1,4 @@
-//package abstact;
+package abstact;
 //
 //public class Main {
 //    public static void main(String[] args) throws CloneNotSupportedException {
