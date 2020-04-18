@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaWork:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWork_jar</output-path>
+    <root id="archive" name="JavaWork.jar">
+      <element id="module-output" name="JavaWork" />
+    </root>
+  </artifact>
+</component>

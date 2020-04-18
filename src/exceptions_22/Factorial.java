@@ -2,15 +2,15 @@ package exceptions_22;
 
 
 public class Factorial {
-    public int fact(int n) throws Exception {
+    public int factorial(int n) throws MyException {
         if(n < 0){
-            throw new IllegalArgumentException("Not a valid number");
+            throw new MyException("Not a valid number");
         }
         if(n == 0){
             return 1;
         }
         else{
-            return n * fact(n - 1);
+            return n * factorial(n - 1);
         }
     }
 }

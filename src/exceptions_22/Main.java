@@ -5,19 +5,18 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         int a = -5;
         Factorial factorial = new Factorial();
         Scanner scanner = null;
+        scanner = new Scanner(new File("1.txt"));
         try {
-            scanner = new Scanner(new File("1.txt"));
-            System.out.println(factorial.fact(scanner.nextInt()));
-        } catch (FileNotFoundException e) {
-            throw new IllegalStateException(e);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally {
+            System.out.println(factorial.factorial(scanner.nextInt()));
+        }  catch (MyException e) {
+            throw new IllegalArgumentException(e);
+        } finally {
             System.out.println("Я выполняюсь всегда");
         }
+
     }
 }

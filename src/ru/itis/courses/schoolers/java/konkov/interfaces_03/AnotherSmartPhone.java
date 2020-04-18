@@ -1,6 +1,7 @@
 package ru.itis.courses.schoolers.java.konkov.interfaces_03;
 
 public class AnotherSmartPhone implements SmartPhoneInterface {
+
     @Override
     public void takePhoto() {
 
