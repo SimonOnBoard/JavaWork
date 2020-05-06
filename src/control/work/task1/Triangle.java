@@ -12,7 +12,7 @@ public class Triangle implements Measurable {
         this.side2 = side2;
         this.side3 = side3;
     }
-
+    //
     @Override
     public double getP() {
         return side1 + side2 + side3;
