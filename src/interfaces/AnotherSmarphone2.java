@@ -8,7 +8,6 @@ public class AnotherSmarphone2 implements SmartPhoneInterface {
 
     @Override
     public void on() {
-
     }
 
     @Override

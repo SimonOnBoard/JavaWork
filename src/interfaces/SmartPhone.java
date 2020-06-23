@@ -1,6 +1,6 @@
 package interfaces;
 
-public class SmartPhone implements Device, Phone, Camera {
+    public class SmartPhone implements Device, Phone, Camera {
     @Override
     public void takePhoto() {
 

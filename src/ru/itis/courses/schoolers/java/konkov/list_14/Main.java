@@ -1,9 +1,11 @@
 package ru.itis.courses.schoolers.java.konkov.list_14;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println(LocalDateTime.now());
         MyList<String> list = new MyList<>();
         list.add("Ahahah");
         list.add("btw");
